@@ -1,7 +1,6 @@
 name: Test Action
 description: 'Getting configmap info from consul to Helm'
 runs:
-  using: 'composite'
   steps:
     - shell: bash
       run: bash ${{ github.action_path }}/run.sh
