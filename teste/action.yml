@@ -3,7 +3,12 @@ description: 'Getting configmap info from consul to Helm'
 runs:
   using: 'composite'
   steps:
-    - shell: bash
-      run: bash ${{ github.action_path }}/run.sh
-      env: 
-        INPUT_CONSULURL: keyvalue
+      - run: bash ${{ github.action_path }}/run.sh
+        shell: bash
+        env:
+          INPUT_CONSULURL: keyvalue
+      - id: executing shell
+        run: bash ${{ github.action_path }}/runshell.sh
+        shell: bash
+
+
