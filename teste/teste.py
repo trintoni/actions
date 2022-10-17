@@ -12,3 +12,13 @@ cpu_increase = lambda container_cpu: container_cpu * 0.1
 cpu_increment = list(map(cpu_increase, container_cpu))
 
 print("Adicionando CPU: " + str(cpu_increment))
+
+
+def exec_command(commands: list, blocked: bool = True) -> tuple:
+    """ Exec Command """
+    print("##################################################")
+    print(f"Exec Command: {CONSUL_URL_BASE}")
+    print("##################################################")
+    return commands, blocked
+
+print(exec_command(pods))
