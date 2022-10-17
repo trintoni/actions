@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "#############################################"
-echo "Informacoes do host..."
+echo "Informacoes do host (RUNNER)..."
 echo "${HOSTNAME}"
-echo "${USERNAME}"
+echo "${USER}"
 echo "#############################################"
