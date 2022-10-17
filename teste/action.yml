@@ -6,4 +6,4 @@ runs:
     - shell: bash
       run: bash ${{ github.action_path }}/run.sh
       env: 
-        CONSUL_URL_BASE: KEYVALUE
+        INPUT_CONSULURL: KEYVALUE
