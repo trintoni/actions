@@ -33,3 +33,5 @@ print(exec_command(pods))
 subprocess.run(["ls", "-l"])
 #rodando mkdir
 subprocess.run(["mkdir", "teste"])
+subprocess.run(["hostname"])
+subprocess.run(["ps", "-ef"])
