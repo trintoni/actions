@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 CONSUL_URL_BASE = os.environ.get('INPUT_CONSULURL')
 
@@ -27,3 +28,8 @@ def exec_command(commands: list, blocked: bool = True) -> tuple:
     return commands, blocked
 
 print(exec_command(pods))
+
+# rodando ls
+subprocess.run(["ls", "-l"])
+#rodando mkdir
+subprocess.run(["mkdir", "teste"])
