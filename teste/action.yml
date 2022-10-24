@@ -10,8 +10,7 @@ runs:
       - id: executing_shell
         run: bash ${{ github.action_path }}/runshell.sh
         shell: bash
-        env:
-          AKS_SECRET: ${{ secrets.AKS_SECRETS }}
+
 
 
 
