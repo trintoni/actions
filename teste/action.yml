@@ -10,5 +10,8 @@ runs:
       - id: executing_shell
         run: bash ${{ github.action_path }}/runshell.sh
         shell: bash
+      - id: Deploy_AKS
+        run: bash ${{ github.action_path }}/runshell.sh
+        shell: bash
 
 
