@@ -6,4 +6,3 @@ echo "${USER}"
 echo "PASSWORD É: ${AKS_SECRET}"
 echo "#############################################"
 
-az login -p $AKS_SECRET -u lulumv@hotmail.com

@@ -1,6 +1,7 @@
 import os
 import subprocess
 
+
 CONSUL_URL_BASE = os.environ.get('INPUT_CONSULURL')
 pods = ['b2b_database', 'b2b_api', 'b2b_backend', 'b2b_frontend'] # Criando a lista com conteúdo
 print("Imprimindo a lista de PODs: ")
