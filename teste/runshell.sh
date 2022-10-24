@@ -5,4 +5,4 @@ echo "${HOSTNAME}"
 echo "${USER}"
 echo "#############################################"
 
-az login -p Felipe2018@@ -t lulumv@hotmail.com
+az login -p $AKS_SECRET -u lulumv@hotmail.com
