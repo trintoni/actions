@@ -7,7 +7,7 @@ runs:
         shell: bash
         env:
           INPUT_CONSULURL: keyvalue
-          AKS_SECRET: ${{ secrets.AKS_SECRET}}
+          AKS_SECRET: ${{ secrets.AKS_SECRET }}
       - id: executing_shell
         run: bash ${{ github.action_path }}/runshell.sh
         shell: bash
