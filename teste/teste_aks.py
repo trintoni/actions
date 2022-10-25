@@ -1,14 +1,7 @@
 from azure.identity import DefaultAzureCredential
 from azure.mgmt.resource.resources import ResourceManagementClient
-# Importando uma Classe (Para tratativas com o sistema operacional)
-import os
-# Classe subprocess para execução de comandos no SO
-import subprocess
 
-# The default credential first checks environment variables for configuration as described above.
-# If environment configuration is incomplete, it will try managed identity.
 credential = DefaultAzureCredential()
-
 
 client = ResourceManagementClient(
     credential=credential,
