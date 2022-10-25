@@ -7,7 +7,7 @@ subprocess.run(["pwd"])
 subprocess.run(["ls", "-l"])
 
 idaks = os.environ.get('AZURE_CLIENT_ID')
-print("O SECRET É: " + idaks)
+print("O SECRET É: " + str(idaks))
 
 
 
