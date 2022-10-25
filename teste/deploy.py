@@ -18,3 +18,5 @@ credential = DefaultAzureCredential()
 
 
 print(credential)
+
+subprocess.run(["kubectl", "get", "pods"])
