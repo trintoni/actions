@@ -5,6 +5,11 @@ import os
 # Classe subprocess para execução de comandos no SO
 import subprocess
 
+
+print("AZURE_CLIENT_ID: " + os.environ.get('AZURE_CLIENT_ID'))
+print("AZURE_TENANT_IDL: " + os.environ.get('AZURE_TENANT_IDL'))
+print("AZURE_CLIENT_SECRET: " + os.environ.get('AZURE_CLIENT_SECRET'))
+
 # The default credential first checks environment variables for configuration as described above.
 # If environment configuration is incomplete, it will try managed identity.
 credential = DefaultAzureCredential()
