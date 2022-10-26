@@ -19,7 +19,7 @@ import yaml
 print("AZURE_CLIENT_ID: " + os.environ.get('AZURE_CLIENT_ID'))
 print("AZURE_TENANT_IDL: " + os.environ.get('AZURE_TENANT_ID'))
 print("AZURE_CLIENT_SECRET: " + os.environ.get('AZURE_CLIENT_SECRET'))
-print("GITHUB_WORKSPACE: " + os.environ.get('GITHUB_WORKSPACE'))
+GITHUB_WORKSPACE =  os.environ.get('GITHUB_WORKSPACE')
 FILE_DEPLOYMENT = os.environ.get('FILE_DEPLOYMENT')
 
 # The default credential first checks environment variables for configuration as described above.
@@ -59,7 +59,7 @@ ret = v1.list_pod_for_all_namespaces(watch=False)
 for i in ret.items:
     print("%s\t%s\t%s" % (i.status.pod_ip, i.metadata.namespace, i.metadata.name))
 
-with open(path.join(path.dirname(__file__), FILE_DEPLOYMENT)) as f:
+with open(path.join(path.dirname(__file__), GITHUB_WORKSPACE + "/" + FILE_DEPLOYMENT)) as f:
     dep = yaml.safe_load(f)
     k8s_apps_v1 = client.AppsV1Api()
     resp = k8s_apps_v1.create_namespaced_deployment(body=dep, namespace="default")
