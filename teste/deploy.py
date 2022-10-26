@@ -19,6 +19,7 @@ import yaml
 print("AZURE_CLIENT_ID: " + os.environ.get('AZURE_CLIENT_ID'))
 print("AZURE_TENANT_IDL: " + os.environ.get('AZURE_TENANT_ID'))
 print("AZURE_CLIENT_SECRET: " + os.environ.get('AZURE_CLIENT_SECRET'))
+print("GITHUB_WORKSPACE: " + os.environ.get('GITHUB_WORKSPACE'))
 FILE_DEPLOYMENT = os.environ.get('FILE_DEPLOYMENT')
 
 # The default credential first checks environment variables for configuration as described above.
