@@ -1,9 +1,10 @@
 #!/bin/bash
 echo "#############################################"
 echo "Informacoes do host (RUNNER)..."
-echo "${HOSTNAME}"
-echo "${USER}"
-echo "${FUNCIONARIO}"
+echo "HOSTNAME: ${HOSTNAME}"
+echo "WORKSPACE: ${WORKSPACE}"
+echo "USERNAME: ${USER}"
+echo "O FUNCIONARIO É: ${FUNCIONARIO}"
 echo "PASSWORD É: ${AKS_SECRET}"
 echo "#############################################"
 
