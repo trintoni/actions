@@ -15,7 +15,7 @@ import re
 from os import path
 import yaml
 
-print("FUNCIONARIO: " + os.environ.get('FUNCIONARIO'))
+print("FUNCIONARIO: " + str(os.environ.get('FUNCIONARIO')))
 print("AZURE_CLIENT_ID: " + os.environ.get('AZURE_CLIENT_ID'))
 print("AZURE_TENANT_IDL: " + os.environ.get('AZURE_TENANT_ID'))
 print("AZURE_CLIENT_SECRET: " + os.environ.get('AZURE_CLIENT_SECRET'))
