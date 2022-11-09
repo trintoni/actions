@@ -1,0 +1,16 @@
+name: 'Mini Kube Deploy Action'
+description: 'Deploy PODs on local Minikube'
+runs:
+  using: 'composite'
+  steps:
+      - run: bash ${{ github.action_path }}/run.sh
+        shell: bash
+        env:
+          INPUT_CONSULURL: keyvalue
+      - id: executing_shell
+        run: bash ${{ github.action_path }}/runshell.sh
+        shell: bash
+
+
+
+
