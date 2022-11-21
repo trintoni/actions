@@ -3,7 +3,7 @@ description: 'Deploy PODs on local Minikube'
 runs:
   using: 'composite'
   steps:
-      - run: bash ${{ github.action_path }}/run.sh
+      - run: bash ${{ github.action_path }}/docker_build_push.sh
         shell: bash
         env:
           INPUT_CONSULURL: keyvalue

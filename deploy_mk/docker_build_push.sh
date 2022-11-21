@@ -5,5 +5,5 @@ echo "HOSTNAME: ${HOSTNAME}"
 echo "WORKSPACE: ${WORKSPACE}"
 echo "USERNAME: ${USER}"
 echo "#############################################"
-python ${GITHUB_ACTION_PATH}/docker_build.py
+python ${GITHUB_ACTION_PATH}/docker_bp.py
 
