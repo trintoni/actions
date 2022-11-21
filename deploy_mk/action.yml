@@ -8,7 +8,7 @@ runs:
         env:
           INPUT_CONSULURL: keyvalue
       - id: executing_shell
-        run: bash ${{ github.action_path }}/runshell.sh
+        run: bash ${{ github.action_path }}/k8s_deploy.sh
         shell: bash
 
 

@@ -4,4 +4,4 @@ hostname
 # python ${GITHUB_ACTION_PATH}/teste.py
 python --version
 kubectl get pods
-python ${GITHUB_ACTION_PATH}/deploy.py
+python ${GITHUB_ACTION_PATH}/k8sdeploy.py
