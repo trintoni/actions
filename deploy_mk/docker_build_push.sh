@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "#############################################"
-echo "Informacoes do host (RUNNER)..."
+echo "Docker BUILD e PUSH para o HARBOR"
 echo "HOSTNAME: ${HOSTNAME}"
 echo "WORKSPACE: ${WORKSPACE}"
 echo "USERNAME: ${USER}"
-echo "PASSWORD É: ${AKS_SECRET}"
 echo "#############################################"
+python ${GITHUB_ACTION_PATH}/docker_build.py
 

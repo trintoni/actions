@@ -1,6 +1,6 @@
 pip install kubernetes
+pip install
 hostname
-apt-get install docker -y
 # python ${GITHUB_ACTION_PATH}/teste.py
 python --version
 kubectl get pods
