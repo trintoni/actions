@@ -5,5 +5,6 @@ echo "HOSTNAME: ${HOSTNAME}"
 echo "WORKSPACE: ${WORKSPACE}"
 echo "USERNAME: ${USER}"
 echo "#############################################"
+eval $(minikube docker-env)
 python3 ${GITHUB_ACTION_PATH}/docker_bp.py
 
