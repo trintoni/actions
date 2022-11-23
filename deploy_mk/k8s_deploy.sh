@@ -1,3 +1,4 @@
+eval $(minikube docker-env)
 pip install kubernetes
 pip install docker
 hostname
