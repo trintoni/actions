@@ -2,7 +2,7 @@
 echo "#############################################"
 echo "Docker BUILD e PUSH para o HARBOR"
 echo "HOSTNAME: ${HOSTNAME}"
-echo "WORKSPACE: ${WORKSPACE}"
+echo "WORKSPACE: ${GITHUB_ACTION_PATH}"
 echo "USERNAME: ${USER}"
 echo "#############################################"
 eval $(minikube docker-env)
